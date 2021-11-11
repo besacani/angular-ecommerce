@@ -1,6 +1,8 @@
 <div class="main-content">
 
     <div class="section-content section-content-p30">
+
+        <h4>Category: {{currentCategoryName}}</h4>
         <div class="container-fluid">
             <div class="row">
                 <!-- loop over the collection of products-->
@@ -9,8 +11,8 @@
                     <div class="product-box">
                         <img src="{{temp.imageUrl}}" class="img-responsive">
                         <h1>{{temp.name}}</h1>
-                        <div class="price">{{temp.unitPrice| currency:"USD"}}</div>
-                        <a href="a" class="primary-btn">Add to cart</a>
+                        <div class="price">{{temp.unitPrice | currency: 'USD'}}</div>
+                        <a href="#" class="primary-btn">Add to cart</a>
                     </div>
                 </div>
             </div>
